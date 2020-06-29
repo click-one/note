@@ -4,9 +4,7 @@
 
 ## redis
 
-* [基本结构](redis/untitled/README.md)
-  * [Untitled](redis/untitled/untitled/README.md)
-    * [Untitled](redis/untitled/untitled/untitled.md)
+* [基础](redis/untitled.md)
 
 ## java
 
