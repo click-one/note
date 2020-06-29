@@ -19,6 +19,7 @@
   * [漏斗限流](redis/usage/rate-limit.md)
   * [分布式锁](redis/usage/distributed-lock.md)
   * [延时队列](redis/usage/delay-queue.md)
+  * [Scan命令](redis/usage/scan.md)
 
 ## java
 
