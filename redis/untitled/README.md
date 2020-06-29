@@ -23,7 +23,7 @@ paragraph
 
 > 12314
 
-![](../.gitbook/assets/kai-hui-.jpg)
+![](../../.gitbook/assets/kai-hui-.jpg)
 
 {% api-method method="get" host="" path="" %}
 {% api-method-summary %}

@@ -4,7 +4,9 @@
 
 ## redis
 
-* [基础](redis/untitled.md)
+* [基础](redis/untitled/README.md)
+  * [redis数据结构](redis/untitled/redis-shu-ju-jie-gou/README.md)
+    * [String\(字符串\)](redis/untitled/redis-shu-ju-jie-gou/string-zi-fu-chuan.md)
 
 ## java
 
