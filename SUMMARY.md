@@ -4,11 +4,11 @@
 
 ## redis
 
-* [基础](redis/untitled/README.md)
-  * [redis数据结构](redis/untitled/data-structure/README.md)
-    * [List\(列表\)](redis/untitled/data-structure/list.md)
-    * [String\(字符串\)](redis/untitled/data-structure/string.md)
-    * [Hash\(字典\)](redis/untitled/data-structure/hash.md)
+* [基础](redis/base/README.md)
+  * [redis数据结构](redis/base/data-structure/README.md)
+    * [List\(列表\)](redis/base/data-structure/list.md)
+    * [String\(字符串\)](redis/base/data-structure/string.md)
+    * [Hash\(字典\)](redis/base/data-structure/hash.md)
 
 ## java
 
