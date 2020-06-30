@@ -24,7 +24,7 @@
   * [线程IO](redis/theory/io.md)
   * [通信协议](redis/theory/protocol.md)
   * [持久化](redis/theory/persistent.md)
-  * [管道](redis/theory/pipe.md)
+  * [管道](redis/theory/pipeline.md)
   * [事务](redis/theory/transaction.md)
   * [发布订阅](redis/theory/pub-sub.md)
   * [小对象压缩](redis/theory/compress.md)
