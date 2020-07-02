@@ -76,13 +76,6 @@ Socket进行信号驱动IO,并安装一个信号处理函数，进程继续运�
 
 现代操作系统的多路复用 API 已经不再使用select系统调用，而改用epoll\(linux\)和kqueue\(freebsd & macosx\)，因为 select 系统调用的性能在描述符特别多时Redis 性能会非常差。
 
-  
-p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Helvetica}  
-p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.5px Helvetica}  
-span.s1 {font: 11.5px Times}  
-span.s2 {font: 11.5px Times; color: \#ff0000}  
-
-
 ## 指令**队列** 
 
 Redis 会将每个客户端套接字都关联一个指令队列。客户端的指令通过队列来排队进行顺序处理，先到先服务。 
