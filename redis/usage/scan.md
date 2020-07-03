@@ -46,6 +46,29 @@ scan 参数提供了三个参数，第一个是 cursor 整数值，第二个是 
 
 从上面的过程可以看到虽然提供的 limit 是 1000，但是返回的结果只有 10 个左右。因为这个 limit 不是限定返回结果的数量，而是限定服务器单次遍历的字典槽位数量\(约等于\)。如果将 limit 设置为 10，你会发现返回结果是空的，但是游标值不为零，意味着遍历还没结束。 
 
+### java中的使用
+
+```java
+    public Set<Object> getPatternKeys(String patternKey) throws Exception{
+        if (StringUtil.isEmpty(patternKey)){
+            return new HashSet<>();
+        }
+        return stringRedisTemplate.execute((RedisConnection redisConnection) -> {
+            Set<Object> keys = new HashSet<>();
+            Cursor<byte[]> cursor = redisConnection.scan( 
+                new ScanOptions.ScanOptionsBuilder().match(patternKey + "*")
+                .count(1000).build());
+            //调用hasNext方法，该方法的实现会去遍历出所有匹配的值
+            while (cursor.hasNext()){ 
+                keys.add(new String(cursor.next()));
+            }
+            return keys;
+        });
+    }
+```
+
+
+
 ## 字典的结构
 
 在 Redis 中所有的 key 都存储在一个很大的字典中，这个字典的结构和 Java 中的 HashMap 一样，是一维数组 + 二维链表结构，第一维数组的大小总是 2^n\(n&gt;=0\)，扩容一次数组大小空间加倍，也就是 2^n++。 
