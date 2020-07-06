@@ -27,7 +27,6 @@
   * [持久化](redis/theory/persistent.md)
   * [管道](redis/theory/pipeline.md)
   * [事务](redis/theory/transaction.md)
-  * [发布订阅](redis/theory/pub-sub.md)
   * [小对象压缩](redis/theory/compress.md)
   * [主从同步](redis/theory/master-slave.md)
 
