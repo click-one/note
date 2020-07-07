@@ -21,7 +21,6 @@
   * [延时队列](redis/usage/delay-queue.md)
   * [Scan命令](redis/usage/scan.md)
 * [原理](redis/theory/README.md)
-  * [Untitled](redis/theory/untitled.md)
   * [线程IO](redis/theory/io.md)
   * [通信协议](redis/theory/protocol.md)
   * [持久化](redis/theory/persistent.md)
@@ -29,6 +28,8 @@
   * [事务](redis/theory/transaction.md)
   * [小对象压缩](redis/theory/compress.md)
   * [主从同步](redis/theory/master-slave.md)
+* [集群](redis/cluster/README.md)
+  * [sentinel](redis/cluster/sentinel.md)
 
 ## java
 

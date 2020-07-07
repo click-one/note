@@ -6,7 +6,7 @@
 
 Redis 的 ziplist 是一个紧凑的字节数组结构，如下图所示，每个元素之间都是紧挨着的
 
-![](../../.gitbook/assets/image%20%2829%29.png)
+![](../../.gitbook/assets/image%20%2830%29.png)
 
 **如果它存储的是 hash 结构，那么 key 和 value 会作为两个 entry 相邻存在一起。** 
 

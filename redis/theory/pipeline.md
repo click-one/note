@@ -51,7 +51,7 @@ SET: 575284.12 requests per second
 
 ## 管道的原理
 
-![&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x6570;&#x636E;&#x4EA4;&#x4E92;&#x8FC7;&#x7A0B;](../../.gitbook/assets/image%20%2828%29.png)
+![&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x6570;&#x636E;&#x4EA4;&#x4E92;&#x8FC7;&#x7A0B;](../../.gitbook/assets/image%20%2829%29.png)
 
 1. 客户端进程调用**write**将消息写到操作系统内核为套接字分配的发送缓冲**send buffer**。 
 2. 客户端操作系统内核将发送缓冲的内容发送到网卡，网卡硬件将数据通过「网际路由」送到服务器的网卡。 
