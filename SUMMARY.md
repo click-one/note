@@ -30,6 +30,7 @@
   * [主从同步](redis/theory/master-slave.md)
 * [集群](redis/cluster/README.md)
   * [sentinel](redis/cluster/sentinel.md)
+  * [cluster](redis/cluster/cluster.md)
 
 ## java
 
