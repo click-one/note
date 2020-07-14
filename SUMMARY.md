@@ -33,6 +33,8 @@
   * [cluster](redis/cluster/cluster.md)
 * [拓展](redis/tuo-zhan/README.md)
   * [Stream](redis/tuo-zhan/stream.md)
+  * [过期策略](redis/tuo-zhan/expired.md)
+  * [LRU](redis/tuo-zhan/lru.md)
 
 ## java
 
