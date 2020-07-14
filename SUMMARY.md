@@ -31,6 +31,8 @@
 * [集群](redis/cluster/README.md)
   * [sentinel](redis/cluster/sentinel.md)
   * [cluster](redis/cluster/cluster.md)
+* [拓展](redis/tuo-zhan/README.md)
+  * [Stream](redis/tuo-zhan/stream.md)
 
 ## java
 
