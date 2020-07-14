@@ -35,6 +35,7 @@
   * [Stream](redis/tuo-zhan/stream.md)
   * [过期策略](redis/tuo-zhan/expired.md)
   * [LRU](redis/tuo-zhan/lru.md)
+  * [惰性删除](redis/tuo-zhan/lazy-free.md)
 
 ## java
 
