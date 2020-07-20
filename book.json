@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "icp"
+  ],
+  "pluginsConfig": {
+    "icp": {
+      "label": "aaa",
+      "number": "京ICP备20026373号",
+      "link": "http://www.beian.miit.gov.cn/"
+    }
+  }
+}
