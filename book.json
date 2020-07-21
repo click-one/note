@@ -2,6 +2,7 @@
   "title": "note",
   "language": "zh-hans",
   "plugins": [
+    "icp",
     "search-pro@2.0.2",
     "splitter@0.0.8",
     "toggle-chapters@0.0.3",
@@ -24,10 +25,13 @@
     "include-html@0.2.0",
     "-include@0.1.0",
     "hide-element@0.0.4",
-    "terminal@0.3.2",
-    "icp"
+    "terminal@0.3.2"
   ],
   "pluginsConfig": {
+    "icp": {
+      "number": "京ICP备20026373号",
+      "link": "http://www.beian.miit.gov.cn/"
+    },
     "search-pro": {
       "cutWordLib": "nodejieba",
       "defineWord": [
@@ -55,7 +59,10 @@
       "timeColor": "#666",
       "copyrightColor": "#666",
       "utcOffset": "8",
-      "style": "normal"
+      "style": "normal",
+      "noPowered": true,
+      "baseUri": "https://github.com/click-one/note",
+      "repo": "note"
     },
     "page-toc-button": {
       "maxTocDepth": 5,
@@ -104,10 +111,6 @@
       "copyButtons": true,
       "fade": false,
       "style": "flat"
-    },
-    "icp": {
-      "number": "京ICP备20026373号",
-      "link": "http://www.beian.miit.gov.cn/"
     }
   }
 }
