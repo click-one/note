@@ -3,7 +3,6 @@
   "language": "zh-hans",
   "plugins": [
     "search-pro@2.0.2",
-    "advanced-emoji@0.2.2",
     "github@2.0.0",
     "splitter@0.0.8",
     "toggle-chapters@0.0.3",
