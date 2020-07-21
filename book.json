@@ -19,9 +19,6 @@
     "auto-scroll-table@0.0.5",
     "pageview-count@1.0.1",
     "popup@0.0.1",
-    "-theme-fexa",
-    "theme-cornerstone@1.1.4",
-    "-theme-gestalt",
     "insert-logo@0.1.5",
     "ad@0.0.4",
     "mermaid-flow@0.0.7",
@@ -112,17 +109,6 @@
     "icp": {
       "number": "京ICP备20026373号",
       "link": "http://www.beian.miit.gov.cn/"
-    }
-  },
-  "variables": {
-    "themeFexa": {
-      "nav": [
-        {
-          "url": "/",
-          "target": "_blank",
-          "name": "吕磊博客"
-        }
-      ]
     }
   }
 }
