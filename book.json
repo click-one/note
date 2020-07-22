@@ -29,11 +29,7 @@
   ],
   "pluginsConfig": {
     "icp": {
-      "number": "京ICP备20026373号",
-      "style":{
-        "display": "block",
-        "color":"green"
-      }
+      "number": "京ICP备20026373号"
     },
     "search-pro": {
       "cutWordLib": "nodejieba",
