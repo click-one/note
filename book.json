@@ -2,6 +2,7 @@
   "title": "note",
   "language": "zh-hans",
   "plugins": [
+    "icp",
     "search-pro@2.0.2",
     "splitter@0.0.8",
     "toggle-chapters@0.0.3",
@@ -27,6 +28,9 @@
     "terminal@0.3.2"
   ],
   "pluginsConfig": {
+    "icp": {
+      "number": "京ICP备20026373号"
+    },
     "search-pro": {
       "cutWordLib": "nodejieba",
       "defineWord": [
@@ -107,30 +111,5 @@
       "fade": false,
       "style": "flat"
     }
-  },
-  "gitbook": {
-  "properties": {
-    "label": {
-      "type": "string",
-      "title": "icp label",
-      "required": false
-    },
-    "number": {
-      "type": "string",
-      "title": "京ICP备20026373号",
-      "required": true
-    },
-    "link": {
-      "type": "string",
-      "title": "link url",
-      "required": false,
-      "default": "http://www.beian.miit.gov.cn/"
-    },
-    "style": {
-      "type": "object",
-      "title": "icp number style",
-      "required": false
-    }
   }
-}
 }
