@@ -31,7 +31,8 @@
     "icp": {
       "number": "京ICP备20026373号",
       "style":{
-        "display": "block"
+        "display": "block",
+        "color":"green"
       }
     },
     "search-pro": {
