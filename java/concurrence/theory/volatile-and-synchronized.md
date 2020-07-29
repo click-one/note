@@ -15,5 +15,34 @@ Java编程语言允许线程访问共享变量，为了 确保共享变量能被
 
 在多处理器下，为了保证各个处理器的缓存是一致的，就会实现缓存一 致性协议，每个处理器通过嗅探在总线上传播的数据来检查自己缓存的值是不是过期了，当 处理器发现自己缓存行对应的内存地址被修改，就会将当前处理器的缓存行设置成无效状 态，当处理器对这个数据进行修改操作的时候，会重新从系统内存中把数据读到处理器缓存 里。
 
+### volatile的使用优化
 
+JDK 7的并发包里新增一个队列集合类Linked- TransferQueue，它在使用volatile变量时，用一种追加字节的方式来优化队列出队和入队的性 能。
+
+```java
+/**
+ * 队列中的头部节点
+ */
+private transient f?inal PaddedAtomicReference<QNode> head;
+/** 队列中的尾部节点 */
+private transient f?inal PaddedAtomicReference<QNode> tail;
+static final class PaddedAtomicReference<T> extends AtomicReference T>{
+        // 使用很多4个字节的引用追加到64个字节
+        Object p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,pa,pb,pc,pd,pe;
+        PaddedAtomicReference(T r){
+                super(r);
+        }
+}
+
+public class AtomicReference<V> implements java.io.Serializable {
+    private volatile V value;
+    // 省略其他代码
+｝
+```
+
+通过追加15个变量\(共60字节\)，再加一个value类型的变量，一共64个字节。对于英特尔酷睿i7、酷睿、Atom和 NetBurst，以及Core Solo和Pentium M处理器的L1、L2或L3缓存的高速缓存行是64个字节宽，不 支持部分填充缓存行，这意味着，如果队列的头节点和尾节点都不足64字节的话，处理器会将 它们都读到同一个高速缓存行中，在多处理器下每个处理器都会缓存同样的头、尾节点，当一 个处理器试图修改头节点时，会将整个缓存行锁定，那么在缓存一致性机制的作用下，会导致 其他处理器不能访问自己高速缓存中的尾节点，而队列的入队和出队操作则需要不停修改头节点和尾结点，在高并发的情况下会严重影响队列的效率。使用64个字节填满高速缓冲区，避免头节点和尾结点加载到同一个缓存行，使得头结点和尾结点不会同时锁住。
+
+
+
+## synchronized的实现与应用
 
