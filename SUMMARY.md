@@ -39,5 +39,8 @@
 
 ## java
 
+* [并发编程](java/concurrence/README.md)
+  * [并发编程的实现原理](java/concurrence/theory/README.md)
+    * [volatile和synchronized](java/concurrence/theory/volatile-and-synchronized.md)
 * [基础](java/untitled.md)
 
